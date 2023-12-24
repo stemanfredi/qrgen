@@ -21,7 +21,16 @@
       </div>
       <div id="qrcode" class="output-area"></div>
     </div>
+    <div id="contextMenu" class="context-menu">
+      <ul>
+        <li onclick="saveAsPNG()">Save as PNG</li>
+        <li onclick="saveAsPDF()">Save as PDF</li>
+        <li onclick="saveAsSVG()">Save as SVG</li>
+      </ul>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

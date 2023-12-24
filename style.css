@@ -16,6 +16,10 @@ body {
   display: flex;
 }
 
+.output-area > svg {
+  margin-left: 2em;
+}
+
 .input-area {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,6 @@ body {
 .output-area {
   display: flex;
   align-items: center;
-  margin-left: 1em;
 }
 
 textarea,
@@ -41,4 +44,31 @@ textarea,
   border: none;
   border-radius: 0.25em;
   cursor: pointer;
+}
+
+.context-menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu ul li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.context-menu ul li:hover {
+  background-color: #f0f0f0;
 }
